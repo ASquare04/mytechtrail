@@ -30,8 +30,8 @@ function About() {
 
   return (
     <>
-      <div className="middle text-white section w-full px-10 flex gap-10 justify-between items-start relative py-10">
-        <div className="left sticky top-28 left-0 w-[40%]">
+      <div className="middle text-white section  px-10 flex md:flex-row flex-col gap-10 items-center justify-between md:items-start relative md:py-10">
+        <div className="left md:sticky md:top-28 left-0 md:w-[40%] w-[20rem]">
           <p className="text-justify text-lg leading-9">
             Emerging from the digital abyss, I am dedicated to revolutionizing
             technology with a bold proclamation: "Let's techify the world!" With
@@ -58,14 +58,14 @@ function About() {
         </div>
         <div
           ref={rightDivRef}
-          className="right w-1/2"
+          className="right md:w-1/2 w-[18rem]"
           style={{ transition: "color 0.5s ease" }} 
         >
-          <h2 className="text-6xl">
-            I’m an aspiring software developer proficient in python programming
+          <h2 className="md:text-6xl text-3xl">
+            i’m an aspiring software developer proficient in python programming
             and machine learning with a solid background in frontend
             development, eager to collaborate on innovative projects within
-            interdisciplinary teams. Passionate about leveraging these
+            interdisciplinary teams. passionate about leveraging these
             technologies in areas such as natural language processing and data
             science.
           </h2>
