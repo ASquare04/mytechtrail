@@ -13,13 +13,13 @@
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" className="flex items-center rtl:space-x-reverse text-white">
             
-              <span className="text-2xl font-semibold tracking-wide whitespace-nowrap">
+              <span className="md:text-2xl font-semibold tracking-wide whitespace-nowrap">
                 AR
               </span>
-              <span className="text-5xl font-semibold tracking-wide whitespace-nowrap text-[#FF6014]">
+              <span className="md:text-5xl text-2xl font-semibold tracking-wide whitespace-nowrap text-[#FF6014]">
                 O
               </span>
-              <span className="text-2xl font-semibold tracking-wide whitespace-nowrap">
+              <span className="md:text-2xl font-semibold tracking-wide whitespace-nowrap">
                 RA
               </span>
             </a>
