@@ -99,25 +99,25 @@ const Homepage = () => {
           ref={(el) => (iconsRef.current[5] = el)}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
           alt="MongoDB"
-          className="w-10 h-10 md:w-20 md:h-24 hidden md:block icon absolute -bottom-24 right-1/4 -rotate-12"
+          className="w-10 h-10 md:w-20 md:h-24 md:block icon absolute -bottom-24 right-6 md:right-1/4 -rotate-12"
         />
         <img
           ref={(el) => (iconsRef.current[6] = el)}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
           alt="Express"
-          className="invert w-10 h-10 md:w-20 md:h-24 hidden md:block icon absolute -bottom-24 left-1/3 rotate-12"
+          className="invert w-10 h-10 md:w-20 md:h-24  md:block icon absolute -bottom-24 left-6 md:left-1/3 rotate-12"
         />
         <img
           ref={(el) => (iconsRef.current[7] = el)}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
           alt="React"
-          className="w-10 h-10 md:w-20 md:h-24 hidden md:block icon absolute -top-10 right-1/4"
+          className="w-10 h-10 md:w-20 md:h-24 md:block icon absolute top-24 right-1 md:-top-10 md:right-1/4"
         />
         <img
           ref={(el) => (iconsRef.current[8] = el)}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
           alt="Node.js"
-          className="w-10 h-10 md:w-20 md:h-24 hidden md:block icon absolute -top-10 left-1/4 -rotate-12"
+          className="w-10 h-10 md:w-20 md:h-24  md:block icon absolute top-24 left-1 -rotate-12 md:-top-10 md:left-1/4"
         />
         <img
           ref={(el) => (iconsRef.current[9] = el)}
