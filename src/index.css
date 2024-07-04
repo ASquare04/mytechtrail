@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: 'Satoshi-Variable','system-ui';
+}
+
+.satoshi{
+  font-family: 'Satoshi-VariableItalic';
+}
 
 ::-webkit-scrollbar {
     width: 6px; 
@@ -26,7 +33,7 @@
 }
 
 .blob{
-  background-image: url('../src//public/blob.svg');
+  background-image: url('../src//public/1.jpg');
 }
 
 
