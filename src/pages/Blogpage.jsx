@@ -88,7 +88,7 @@ function Blogpage() {
     <>
       <Navbar />
       <div className="text-white px-4">
-        <h1 className="mb-2 md:mt-2 mt-6 text-3xl md:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight text-center">
+        <h1 className="m-4 text-3xl md:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight text-center">
           Read some of my{" "} 
           <span className="dark:text-purple-500 md:underline">
             top notch #1
