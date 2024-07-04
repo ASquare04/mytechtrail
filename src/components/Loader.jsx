@@ -3,7 +3,7 @@ import React from "react";
 function Loader() {
   return (
     <div>
-      <div class="loader">
+      <div class="loader mt-12">
         <div class="square" id="sq1"></div>
         <div class="square" id="sq2"></div>
         <div class="square" id="sq3"></div>
