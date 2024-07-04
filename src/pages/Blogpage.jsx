@@ -3,6 +3,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 import Navbar from "../components/Navbar";
 import CountUp from "react-countup";
+import Loader from "../components/Loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faHeart, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -152,7 +153,8 @@ function Blogpage() {
           </div>
           {loading && (
             <div className="flex justify-center mt-12">
-              <div className="loader ease-linear rounded-full border-2 border-t-8 border-purple-300 h-14 w-14"></div>
+              <Loader/>
+              
             </div>
           )}
         </section>
