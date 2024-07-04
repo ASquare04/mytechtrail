@@ -102,7 +102,7 @@ function Navbar() {
             </button>
           </div>
           <div
-            className={`fixed top-0 left-0 w-full h-screen md:w-auto bg-black text-white shadow-xl transform transition-transform ease-in-out duration-300 ${
+            className={`fixed top-0 left-0 w-full h-screen md:w-auto bg-black text-white shadow-xl transform transition-transform ease-in-out duration-500 ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             } md:hidden`}
           >
