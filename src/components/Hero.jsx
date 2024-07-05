@@ -1,16 +1,46 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 function Hero() {
+  const blobRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      blobRef.current,
+      { opacity: 0, scale: 0.25 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: blobRef.current,
+          start: "top 95%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font font-serif font-extralight md:text-4xl text-lg mb-4 text-white">
-            last but not least, i wanna thank me..
+    <section className="text-gray-600 body-font">
+      <div className="container mx-auto flex px-4 py-16 items-center justify-center flex-col">
+        <div
+          ref={blobRef}
+          className="blob md:w-64 md:h-64 w-48 -translate-y-8 h-48 bg-cover rounded-full mb-8 border-2"
+        ></div>
+        
+        <div className="text-center lg:w-2/3 w-full">
+          <h1 className="title-font font-extralight  md:text-4xl text-lg mb-4 text-white">
+          I aim to excel through innovation, leadership, and impactful contributions.
           </h1>
 
-          <blockquote class="md:text-xl text-sm italic font-semibold text-gray-900 dark:text-white">
+          <blockquote className="md:text-xl text-sm italic font-semibold text-white">
             <svg
-              class="w-8 h-8 text-white mb-4"
+              className="md:w-8 md:h-8 h-4 w-4  text-white mb-4"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -21,27 +51,28 @@ function Hero() {
             <p className="m-6">
               Let me win. But if I cannot win, let me brave in the attempt. For in the chronicles of life, effort always precedes triumph.
             </p>
-            <p className="md:m-8 m-6 text-xs md:text-lg">Try to be <span className="text-yellow-500">#404</span> sometimes, not always the <span className="text-purple-500">#200</span></p>
           </blockquote>
 
-          <div class="flex justify-center gap-4">
-            <button class="flex items-center px-4 py-2 text-sm font-semibold bg-white rounded text-black hover:bg-black transition-all ease-in-out duration-500 hover:text-white">
-              <a href="https://github.com/ASquare04" target="_blank">
-              <i class="fab fa-github mr-2"></i>
-              Just Visit
+          <div className="m-4 flex justify-center gap-4">
+            <button className="flex items-center px-4 py-2 text-sm font-semibold bg-white rounded text-black hover:bg-black transition-all ease-in-out duration-500 hover:text-white">
+              <a href="https://github.com/ASquare04" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github mr-2"></i>
+                Just Visit
               </a>
             </button>
             
-            <button class="flex items-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-black  hover:text-blue-600 transition-all ease-in-out duration-500">
-              <a href="https://www.linkedin.com/in/anmolarora0401/" target="_blank">
-              <i class="fab fa-linkedin mr-2"></i>
-              Connect Now
+            <button className="flex items-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-black  hover:text-blue-600 transition-all ease-in-out duration-500">
+              <a href="https://www.linkedin.com/in/anmolarora0401/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin mr-2"></i>
+                Connect Now
               </a>
             </button>
           </div>
+          <p className="text-white text-sm md:text-lg">Try to be <span className="text-yellow-500">404</span> sometimes, not always the <span className="text-purple-500">200</span></p>
         </div>
       </div>
     </section>
   );
 }
+
 export default Hero;
