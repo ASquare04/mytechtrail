@@ -125,8 +125,8 @@ function Navbar() {
                 to="/connect"
                 className={`block py-2 text-xs px-4 text-black bg-[#FF6014] rounded ${
                   isActive("/connect")
-                    ? "text-orange-500"
-                    : "hover:text-orange-600"
+                    ? "text-white"
+                    : "hover:text-white"
                 }`}
                 onClick={toggleMenu}
               >
