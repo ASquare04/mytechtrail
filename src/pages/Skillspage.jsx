@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Navbar from "../components/Navbar";
+import Skillset from "../components/Skillset";
 
 const sentence = "Uhm, skillset? Yes I hold some. Just dive in..";
 
@@ -34,7 +35,7 @@ const Skillspage = () => {
         ease: "power1.inOut",
         stagger: 0.2,
       },
-      "+=0.15"
+      "+=0.01"
     );
   }, []);
 
@@ -102,6 +103,7 @@ const Skillspage = () => {
           </div>
         </section>
       </div>
+      <Skillset />
     </>
   );
 };
