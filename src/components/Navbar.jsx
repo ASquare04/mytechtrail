@@ -107,7 +107,7 @@ function Navbar() {
             } md:hidden`}
           >
             <div className="flex items-center justify-between p-4 transition-all duration-300 ease-in-out border-b border-white">
-              <Link to="/" className="text-2xl ml-2">
+              <Link to="" className="text-2xl ml-2">
                 <button
                   type="button"
                   className="md:hidden"
