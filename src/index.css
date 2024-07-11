@@ -36,7 +36,7 @@
   background-image: url('../src//public/me.png');
 }
 
-.backGround, .backGround1, .backGround2 {
+.backGround, .backGround1, .backGround2, .effect {
   background-attachment: fixed; 
   background-position: center;
   transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
@@ -54,6 +54,9 @@
   background-image: url('../src/public/bg3.png');
 }
 
+.effect{
+  background-image: url('../src/public/effect.png');
+}
 
 .resume {
   position: relative;
@@ -249,4 +252,24 @@
 
 .skill-bar-fill {
   animation: skill-bar-animation 2s ease-in-out forwards;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.relative:hover .overlay {
+  opacity: 1;
 }
