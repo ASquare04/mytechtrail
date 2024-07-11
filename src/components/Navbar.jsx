@@ -41,14 +41,14 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/project"
+                  to="/projects"
                   className={`px-3 py-2 transition-all duration-300 ease-in-out ${
                     isActive("/project")
                       ? "text-orange-500"
                       : "hover:text-orange-600"
                   }`}
                 >
-                  Project
+                  Projects
                 </Link>
               </li>
               <li>
@@ -147,7 +147,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/project"
+                  to="/projects"
                   className={`block py-2 px-4 rounded ${
                     isActive("/project")
                       ? "text-orange-500"
@@ -155,7 +155,7 @@ function Navbar() {
                   }`}
                   onClick={toggleMenu}
                 >
-                  Project
+                  Projects
                 </Link>
               </li>
               <li>
