@@ -80,8 +80,8 @@ function Navbar() {
                   to="/connect"
                   className={`px-3 py-2 bg-[#FF6014] rounded-md text-black transition-all duration-300 ease-in-out  ${
                     isActive("/connect")
-                      ? "hover:text-black"
-                      : "hover:text-white"
+                      ? "text-white"
+                      : "text-black"
                   }`}
                 >
                   Contact Me
