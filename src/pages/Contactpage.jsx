@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Contactpage() {
-  const email = "aroranmol722@gmail.com";
+  const email = "aroraanmol722@gmail.com";
   const location = "New Delhi, India";
 
   const [formData, setFormData] = useState({
