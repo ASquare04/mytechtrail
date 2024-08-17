@@ -3,11 +3,10 @@ import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Toaster, toast } from 'react-hot-toast';
 
 function Contactpage() {
-  const email = "aroraanmol722@gmail.com";
+  const email = "aroranmol722@gmail.com";
   const location = "New Delhi, India";
 
   const [formData, setFormData] = useState({
@@ -42,8 +41,8 @@ function Contactpage() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-
-      toast.info('Sending message...', { autoClose: 2000});
+      // Show sending message
+      toast.loading('Sending message...', { duration: 2000 });
 
       emailjs
         .sendForm(
@@ -60,7 +59,7 @@ function Contactpage() {
           },
           (error) => {
             console.log(error.text);
-     
+            // Show error message
             toast.error('Error submitting form. Please try again later.');
           }
         );
@@ -70,9 +69,8 @@ function Contactpage() {
   return (
     <>
       <Navbar />
-      <ToastContainer />
       <div className="flex flex-col md:flex-row gap-8 md:p-12 p-4">
-
+        {/* Left Section */}
         <div className="md:w-1/2 text-white p-4 flex flex-col justify-center">
           <h1 className="md:text-6xl text-3xl">
             Let's brainstorm something{" "}
@@ -136,6 +134,8 @@ function Contactpage() {
           </div>
         </div>
 
+        {/* Right Section */}
+        <Toaster />
         <section className="md:w-1/2 p-4 body-font text-white">
           <div className="w-full md:h-auto">
             <form className="flex flex-col w-full p-4" onSubmit={handleSubmit}>
