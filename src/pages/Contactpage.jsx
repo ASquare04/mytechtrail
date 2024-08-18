@@ -55,7 +55,7 @@ function Contactpage() {
           (result) => {
             console.log(result.text);
             setIsSubmitted(true);
-            toast.success('Form submitted successfully!');
+            toast.success('Message Sent!');
           },
           (error) => {
             console.log(error.text);
