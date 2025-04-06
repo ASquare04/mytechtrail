@@ -47,7 +47,7 @@ function About() {
           </h1>
           <button className="mt-10" title="CV">
             <a
-              href="https://drive.google.com/file/d/1m8D6o8ICVE8Wxe7-xIXKA30JUjgnB5N_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lvR8NLz05yZ5YM0ok7kiOe5sjGxxuuZ3/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="resume"
